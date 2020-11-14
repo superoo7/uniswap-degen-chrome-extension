@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Degen Extension",
+  "version": "0.0.1",
+  "description": "Simple chrome extension",
+  "permissions": ["notifications"],
+  "icons": {
+    "250": "smile_face.png"
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["background_script.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": ["disp.html"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.uniswap.org/*",
+        "https://exchange.sushiswapclassic.org/*"
+      ],
+      "js": ["content_script.js"]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<style>
+  #mainDiv {
+    background: #6c5ce7;
+    position: fixed;
+    padding: 16px;
+    background: #6c5ce7;
+    bottom: 72px;
+    left: 0;
+    cursor: pointer;
+  }
+  #mainDiv:hover {
+    background: #a29bfe;
+  }
+  #mainContainer {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .degen-input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+
+<div id="mainContainer">
+  <div class="degen-input-container">
+    <span>Big Moon: </span>
+    <input type="number" id="up-price" />
+  </div>
+  <div class="degen-input-container">
+    <span>Big Doom: </span>
+    <input type="number" id="down-price" />
+  </div>
+</div>
