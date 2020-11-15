@@ -9,7 +9,11 @@ Project still under Alpha, use at your own risk.
 
 ## Installation Guide
 
-WIP
+- Download ZIP file from Release page or build from source https://github.com/superoo7/uniswap-degen-chrome-extension/releases
+- Unzip
+- Go to brave://extensions/ or chrome://extensions
+- Click on "Load Unpacked"
+- Choose the unzip folder
 
 ## Tech Stack
 
@@ -23,3 +27,5 @@ WIP
 npm i
 npm run build
 ```
+
+Then the public folder has all the build file, you can just "load unpacked" with the public folder.
